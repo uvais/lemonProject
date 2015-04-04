@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Swan</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/default.css')}}">
+</head>
+<body>
+	<div id="logo2"><img src="{{url_for('static', filename='images/logo.jpg')}}" /></div>
+	<div>
+		{% for r in result %}
+			<p><a href="{{r[1]}}" target="_blank">{{r[1]}}</a> ({{r[0]}})</p>
+		{% endfor %}
+
+	</div>
+		
+</body>
+</html>

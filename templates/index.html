@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Swan</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/default.css')}}">
+</head>
+<body>
+	<div id="logo"><img src="{{url_for('static', filename='images/logo.jpg')}}" /></div>
+	<form id="search" action="query" method="POST">
+		<input type="text" size="60" name="q" />
+		<input type="submit" value="Search" style="position: absolute; left: -9999px;" />
+	</form>
+</body>
+</html>
